@@ -7,5 +7,8 @@ package it.unipd.mtss;
 public class RomanPrinter {
   public static void main( String[] args )
     {
+      public static String print(int num) {
+        return ""; //Implementare ASCII
+    }
     }
 }
