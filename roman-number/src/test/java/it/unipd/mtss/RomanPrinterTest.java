@@ -3,10 +3,7 @@
 // Leonardo Salviato 2101086
 ////////////////////////////////////////////////////////////////////
 package it.unipd.mtss;
-
-import static org.junit.jupiter.api.Assertions.assertEquals;
-
-import org.junit.jupiter.api.Test;
+import static org.junit.Assert.assertEquals;
 
 public class RomanPrinterTest {
     @Test
