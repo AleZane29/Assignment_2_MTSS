@@ -49,10 +49,19 @@ public class IntegerToRomanTest {
         assertEquals("M", IntegerToRoman.convert(1000));
     }
 
-    @Test
-    public void testIllegalArgumentException() {
-        assertThrows(IllegalArgumentException.class, () -> IntegerToRoman.convert(0));
-        assertThrows(IllegalArgumentException.class, () -> IntegerToRoman.convert(1001));
-        assertThrows(IllegalArgumentException.class, () -> IntegerToRoman.convert(-1));
+    @Test(expected = IllegalArgumentException.class)
+    public void testZeroThrowsException() {
+        IntegerToRoman.convert(0);
     }
+
+    @Test(expected = IllegalArgumentException.class)
+    public void testTooHighThrowsException() {
+        IntegerToRoman.convert(1001);
+    }
+
+    @Test(expected = IllegalArgumentException.class)
+    public void testNegativeThrowsException() {
+        IntegerToRoman.convert(-1);
+    }
+
   }
