@@ -20,8 +20,3 @@ jobs:
     - name: Test with JaCoCo
       run: mvn test jacoco:report
       working-directory: roman-number
-    - name: Report to Coveralls
-      env:
-        COVERALLS_REPO_TOKEN: ${{secrets.COVERALLS_REPO_TOKEN}}
-      run: mvn coveralls:report
-      working-directory: roman-number
